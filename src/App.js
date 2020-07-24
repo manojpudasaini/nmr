@@ -1,13 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Carousel from './components/Carousel/carousel'
+import Header from "./components/Header/header";
 
 function App() {
   return (
-    <div className="container">
-      <Carousel/>
-
+    <div>
+      <Header/>
     </div>
   );
 }
