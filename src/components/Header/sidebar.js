@@ -6,7 +6,9 @@ const Sidebar=()=>{
         <React.Fragment>
             <div className='side-wrapper'>
                 <div>
-
+                <a className='nav' href="/">Home</a>
+                <a className='nav' href="/">Movies</a>
+                <a className='nav' href="/">Series</a>
                 </div>
             </div>
         </React.Fragment>
