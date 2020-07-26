@@ -1,56 +1,77 @@
-.container{
-    display:flex;
+.container {
+    display: flex;
     justify-content: flex-end;
     background-color: #000000;
-    }
-    
-    ul{
-    list-style-type:none;
-    display:inline-flex;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
     margin-right: 12%;
-    }
-    
-    li a{
+}
+
+li a {
     font-size: 20px;
     padding: 0px 18px;
     text-decoration: none;
-    text-align:center;
+    text-align: center;
     color: #ffffff;
-    }
-    
-    li a:hover{
-    background-color: #b92323;
-    }
-    .menu-icon{
-        display:none;
-    }
+}
 
-    
-    /*
+li a:hover {
+    background-color: #b92323;
+}
+
+.menu-icon {
+    display: none;
+}
+.button-style{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+/*
     css for slider
     */
 
-    .side-wrapper{
+.side-wrapper {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .side-wrapper {
+        position: absolute;
+        top: 52px;
+        right: 0;
+        display: block;
+        justify-self: end;
+        height: 100vh;
+        width: 250px;
+        background-color: blueviolet;
+        z-index: 1000;
+    }
+
+    li a {
         display: none;
     }
 
-    @media only screen and (max-width: 600px) {
-        .side-wrapper{
-            position :absolute;
-            top:52px;
-            right: 0;
-            display: flex;
-            justify-self: end;
-          height: 100vh;
-          width: 250px;
-          background-color: blueviolet;
-          z-index: 1000;
-        }
-        li a{
-           display: none;
-            }
-            .menu-icon{
-                display: block;
-                margin-right: 20px;
-            }
+    .menu-icon {
+        display: block;
+        margin-right: 20px;
     }
+
+    .button-wrapper{
+        display: block;
+        margin-left: 20px;
+        
+    }
+
+}

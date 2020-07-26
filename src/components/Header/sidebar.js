@@ -5,9 +5,8 @@ const Sidebar=()=>{
     return(
         <React.Fragment>
             <div className='side-wrapper'>
-                <div>
-
-                </div>
+                <a href="#" className="button-style">Movies</a>
+                <a href="#" className="button-style">TV Series</a>
             </div>
         </React.Fragment>
     )
