@@ -2,23 +2,25 @@ import React from "react";
 import { Carousel } from "antd";
 import 'antd/dist/antd.css';
 import './carousel.css';
-import Img from '../../assets/_RUP1975.JPG';
+import Kalopothi from '../../assets/kalopothi.jpg';
+import Kabaddi from '../../assets/kabaddi.jpg';
+import Tvt from '../../assets/tvt.jpg';
+import Loot from '../../assets/loot.jpg';
 const Carousal = () => {
   return (
     <React.Fragment>
       <Carousel effect="fade" autoplay  dotPosition="bottom" effect='scrollx' >
-        <div>
-          <h3>1</h3>
-       
+        <div>   
+          <img src={Kalopothi} alt="kalopothi-image"/>
         </div>
         <div>
-          <h3>2</h3>
+          <img src={Kabaddi} alt="kabaddi-image"/>
+        </div>
+        <div> 
+          <img src={Tvt} alt="tvt-image"/>
         </div>
         <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
+          <image src={Loot} alt="loot-image"/>
         </div>
       </Carousel>
     </React.Fragment>
