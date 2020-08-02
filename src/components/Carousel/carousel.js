@@ -2,26 +2,24 @@ import React from "react";
 import { Carousel } from "antd";
 import 'antd/dist/antd.css';
 import './carousel.css';
-import Img from '../../assets/_RUP1975.JPG';
+import Img from '../../assets/life.jpg';
+import Butterfly from "../../assets/butterfly.png";
 const Carousal = () => {
   return (
-    <React.Fragment>
+    <div className="carousel-wrapper">
       <Carousel effect="fade" autoplay  dotPosition="bottom" effect='scrollx' >
-        <div>
-          <h3>1</h3>
-       
+        <div style={{height:'600px' }} >
+          <img className="carousel-image" src={Img} alt="life-image"/>
+          <div className="info">
+          <p>Et amet proident commodo ad do aliqua laborum. Incididunt nulla non ad ipsum consectetur occaecat eiusmod elit. Velit dolor enim ea minim id.</p>
+          </div>
+          
         </div>
         <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
+          <img className="carousel-image" src={Butterfly} alt="butterfly-image"/>
         </div>
       </Carousel>
-    </React.Fragment>
+    </div>
   );
 };
 export default Carousal;
