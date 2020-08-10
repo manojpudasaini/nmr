@@ -2,24 +2,25 @@ import React from "react";
 import { Carousel } from "antd";
 import 'antd/dist/antd.css';
 import './carousel.css';
-import Img from '../../assets/life.jpg';
-import Butterfly from "../../assets/butterfly.png";
+import Kalopothi from '../../assets/kalopothi.jpg';
+import Kabaddi from '../../assets/kabaddi.jpg';
+import Tvt from '../../assets/tvt.jpg';
+import Loot from '../../assets/loot.jpg';
 const Carousal = () => {
   return (
-    <div className="carousel-wrapper">
-      <Carousel effect="fade"   dotPosition="bottom" effect='scrollx' adaptiveHeight='true' >
-        <div style={{height:'600px' }} >
-          <img className="carousel-image" src={Img} alt="life-image"/>
-          <div className="info">
-          <p>Et amet proident commodo ad do aliqua laborum. Incididunt nulla non ad ipsum consectetur occaecat eiusmod elit. Velit dolor enim ea minim id.</p>
-          </div>
-          
+      <Carousel effect="fade" autoplay  dotPosition="bottom" effect='scrollx' >
+        <div>   
+          <img src={Kalopothi} alt="kalopothi-image"/>
         </div>
         <div>
-          <img className="carousel-image" src={Butterfly} alt="butterfly-image"/>
+          <img src={Kabaddi} alt="kabaddi-image"/>
+        </div>
+        <div> 
+          <img src={Tvt} alt="tvt-image"/>
+        </div>
+        <div>
+          <image src={Loot} alt="loot-image"/>
         </div>
       </Carousel>
-    </div>
-  );
-};
+  )};
 export default Carousal;
