@@ -7,7 +7,7 @@ import Butterfly from "../../assets/butterfly.png";
 const Carousal = () => {
   return (
     <div className="carousel-wrapper">
-      <Carousel effect="fade" autoplay  dotPosition="bottom" effect='scrollx' >
+      <Carousel effect="fade"   dotPosition="bottom" effect='scrollx' adaptiveHeight='true' >
         <div style={{height:'600px' }} >
           <img className="carousel-image" src={Img} alt="life-image"/>
           <div className="info">

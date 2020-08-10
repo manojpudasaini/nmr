@@ -20,8 +20,9 @@
   }
 
   .info{
-    position: absolute;
+    position: absolute !important;
     height:200px;
+    width: 400px;
     top:100px;
     left:100px;
     color: red;
