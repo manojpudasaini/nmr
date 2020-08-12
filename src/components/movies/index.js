@@ -15,8 +15,8 @@ const Movies = () =>{
         
     })
    return(
-    <div style={{width:"100%"}}>
-    <Slider {...settings} style={{width:"100%"}}>
+    <div style={{width:"100%", paddingLeft:'6%'}}>
+    <Slider {...settings} style={{width:"97%"}}>
       <div >
       <Mcard/>
       </div>
