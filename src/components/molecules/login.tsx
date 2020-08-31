@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import Input from '../atoms/Input/index';
-import axios from "axios"
+import axios from "axios";
 const LoginForm=()=>{
   
     const [info,setData]=useState([]);
