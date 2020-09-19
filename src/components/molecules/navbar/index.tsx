@@ -1,6 +1,7 @@
 import React from 'react';
 import {createUseStyles} from 'react-jss';
-import Logo from '../../../assets/name.png';
+import Logo from '../../../assets/logo.png';
+
 
 const useStyles=createUseStyles({
     navbarContainer:{
@@ -28,11 +29,14 @@ const useStyles=createUseStyles({
             textTransform:'uppercase',
             textDecoration:'none',  
             color:'#22313F',
-            fontSize:13,
-            fontFamily:'sans-serif',
+            fontSize:17,
+            fontFamily:`'Montserrat',sans-serif`,
         },
         '& a:hover':{
             color:'#f06060',
+        },
+        '& a:focus':{
+            color:'#f06060',       
         },
         '& button':{
             backgroundColor:'#f06060',
@@ -41,21 +45,31 @@ const useStyles=createUseStyles({
             borderRadius: 4,
             border:'1px solid #f06060',
             color:'#fff',
-            fontSize:13,
-            fontFamily:'sans-serif',
+            fontSize:17,
+            fontFamily:`'Montserrat',sans-serif`,
         },
-        '& a:focus':{
-            color:'#f06060',       
-    },
+        '& button:hover':{
+            color:'#f06060',
+            backgroundColor:'#fff',
+        },
+        '& button:focus':{
+            outline:'none',
+        },
+        
+},
+    
 
-}
 })
 const Navbar =()=>{
     const classes=useStyles();
     return(
+       
+        <div>
+
+        
         <div className={classes.navbarContainer}>
             <div className={classes.imageWrapper}>
-                <a href="/"><img src={Logo} alt="smartlyown-image" width='150' height='60'/></a>
+                <a href="/"><img src={Logo} alt="smartlyown-image" width='250' height='100'/></a>
             </div>
             <div className={classes.navbarWrapper}>
                 <a href="#">portfolio</a>
@@ -66,6 +80,9 @@ const Navbar =()=>{
                 <button type='submit'>contacts</button>
             </div>
         </div>
+        
+        </div>
+       
     )
 }
 
