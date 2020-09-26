@@ -1,89 +1,112 @@
+import { AntDesignOutlined } from '@ant-design/icons';
 import React from 'react';
 import {createUseStyles} from 'react-jss';
+import {MenuOutlined} from "@ant-design/icons";
 import Logo from '../../../assets/logo.png';
+import Button from '../../atoms/button/index';
 
-
-const useStyles=createUseStyles({
-    navbarContainer:{
-        height:100,
-        //backgroundColor:'red',
-        display:'flex',
-    },
-    imageWrapper:{
-        //backgroundColor:"aqua",
-        height:"100%",
-        width:'40%',
-        marginLeft:100,
-        display:'flex',
-        alignItems:'center',
-    },
-    navbarWrapper:{
-        //backgroundColor:"yellow",
-        height:"100%",
-        width:'60%',
-        display:'flex',
-        alignItems:'center',
-        justifyContent:'space-between',
-        marginRight:100,
-        '& a':{
-            textTransform:'uppercase',
-            textDecoration:'none',  
-            color:'#22313F',
-            fontSize:17,
-            fontFamily:`'Montserrat',sans-serif`,
-        },
-        '& a:hover':{
-            color:'#f06060',
-        },
-        '& a:focus':{
-            color:'#f06060',       
-        },
-        '& button':{
-            backgroundColor:'#f06060',
-            padding:'7px 10px',
-            textTransform:'uppercase',
-            borderRadius: 4,
-            border:'1px solid #f06060',
-            color:'#fff',
-            fontSize:17,
-            fontFamily:`'Montserrat',sans-serif`,
-        },
-        '& button:hover':{
-            color:'#f06060',
-            backgroundColor:'#fff',
-        },
-        '& button:focus':{
-            outline:'none',
-        },
-        
-},
+const useStyles = createUseStyles({
     
+    mainWrapper:{
+        fontFamily:`'Montserrat',sans-serif`,
+    },
+
+    imageWrapper:{
+        top:'2%',
+        position:'absolute',
+        height:'10vh',
+        '& img':{
+            padding:'5px 15px',
+            cursor:'pointer',
+        },
+    },
+    navWrapper:{
+        height:'10vh',
+        backgroundColor:'#5b78c7',  
+    },
+
+    navLinks:{
+        display:'flex',
+        listStyle:'none',
+        width:'50%',
+        height:'100%',
+        justifyContent:'space-around',
+        alignItems:'center',
+        marginLeft:'auto',
+        '& li a':{
+            fontSize:'1.2rem',
+            color:'white',
+            textDecoration:'none',
+        },
+    },
+    hamBurger:{
+    display:'none',
+    },
+
+    '@media (max-width: 768px)':{
+        imageWrapper:{
+            top:0,
+            position:'absolute',
+            height:'10vh',
+            '& img':{
+                padding:'5px 15px 0px 15px',
+            },
+        },
+        navLinks:{
+            zIndex:1,
+           display:'flex',
+           position:'fixed', 
+           backgroundColor:'#5b78c7',
+           top:'9%',
+           right:0,
+           height:'50vh',
+           width:'20vh',
+           flexDirection:'column',
+           clipPath:'circle(100px at 90% -10% )',
+           '-webkit-clipPath':'circle(1200px at 90% -10%)',
+           transition:'all 1s ease-out',
+           '& li a':{
+            fontSize:'0.9rem',
+           },
+        },
+        nav:{
+           position:'relative',
+        },
+        hamBurger:{
+            zIndex:2,
+            display:'block',
+            position:'absolute',
+            color:'white',
+            cursor:'pointer',
+            fontSize:30,
+            right:'5%',
+            top:'3%',
+            transform:'translate(-5%,-3%)',
+        },
+    }
 
 })
-const Navbar =()=>{
-    const classes=useStyles();
-    return(
-       
-        <div>
 
-        
-        <div className={classes.navbarContainer}>
+const Responsivenav =() =>{
+    const classes= useStyles();
+
+    return(    
+        <div className={classes.mainWrapper} >
             <div className={classes.imageWrapper}>
-                <a href="/"><img src={Logo} alt="smartlyown-image" width='250' height='100'/></a>
+              <a href="/"><img src={Logo} width='200px'/></a>  
             </div>
-            <div className={classes.navbarWrapper}>
-                <a href="#">portfolio</a>
-                <a href="#">skills</a>
-                <a href="#">services</a>
-                <a href="#">pricing</a>
-                <a href="#">blog</a>
-                <button type='submit'>contacts</button>
-            </div>
+            <nav className={classes.navWrapper}>
+                <MenuOutlined className={classes.hamBurger}/>
+                <ul className={classes.navLinks}>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><Button buttonName="Sign Up"/></li>
+                </ul>
+            </nav>      
         </div>
-        
-        </div>
-       
     )
 }
 
-export default Navbar;
+
+export default Responsivenav;

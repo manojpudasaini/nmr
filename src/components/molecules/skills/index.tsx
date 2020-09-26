@@ -15,6 +15,7 @@ const useStyle = createUseStyles({
         textAlign: 'center',
         fontSize: 40,
         fontWeight: 600,
+        lineHeight:'64px',
         color: '#2c5f2d',
     },
     mainRow: {
@@ -25,6 +26,7 @@ const useStyle = createUseStyles({
 
     skillTitle: {
         fontSize: 30,
+        fontWeight:600,
         lineHeight: '64px',
         display: 'flex',
         flexDirection: 'column',
@@ -32,10 +34,12 @@ const useStyle = createUseStyles({
         margin: '10px 0px',
         '& p': {
             borderBottom: '1px solid #fff',
-            fontWeight: 500,
+            
         },
 
         '& li': {
+            fontSize:20,
+            fontWeight:400,
             listStyle: 'none',
         },
     },

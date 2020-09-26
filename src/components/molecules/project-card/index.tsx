@@ -69,7 +69,7 @@ const useStyles=createUseStyles({
     projectInformationHolder:{
         borderTop:'1px solid #CCC',
         textAlign:'center',
-        padding:'10px 5px 0px 0px',
+        padding:'1px 5px 0px 0px',
         fontFamily:`'Montserrat',sans-serif`,
         '& p':{
             fontSize:20,
