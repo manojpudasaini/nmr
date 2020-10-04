@@ -7,7 +7,7 @@ import Contact from "./components/molecules/contact/index";
 
 const  App=()=> {
   return ( 
-  <div>
+  <div style={{backgroundColor:"#ccc"}}>
     <Navbar/>
    <Portfolio />
    <Skills/>

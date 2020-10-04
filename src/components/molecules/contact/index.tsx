@@ -1,8 +1,7 @@
 import React from 'react';
 import {createUseStyles} from "react-jss";
 import {FacebookOutlined,InstagramOutlined,LinkedinOutlined} from '@ant-design/icons';
-import {BrowserRouter as Router,Link,Route} from 'react-router-dom';
-import {useHistory} from 'react-router';
+//import {useHistory} from 'react-router';
 
 const useStyles = createUseStyles({
     contactWrapper:{
@@ -34,10 +33,10 @@ const useStyles = createUseStyles({
 
 const Contact =() =>{
     const classes= useStyles();
-    const history= useHistory();
-    const facebookHandler=()=>{
-        history.replace('www.facebook.com');
-    }
+    // const history= useHistory();
+    // const facebookHandler=()=>{
+    //     history.replace('www.facebook.com');
+    // }
     return(
         <div className={classes.contactWrapper}>
             <div className={classes.contactHeader}>

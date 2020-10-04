@@ -5,8 +5,7 @@ import {createUseStyles} from "react-jss";
 const useStyle = createUseStyles({
   projectTitle:{
     fontSize:40,
-    backgroundColor:'#f5f5f5',
-    color:'#f06060',
+    color:'#AF002A',
     fontFamily:`'Montserrat',sans-serif`,
     lineHeight:'64px',
     textAlign:'center',

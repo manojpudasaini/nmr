@@ -16,7 +16,7 @@ const useStyles=createUseStyles({
         position:'relative',
         padding:'1px 0px 0px 0px',
         border:'1px solid rgba(150,5,5,0.8)',
-        margin:'10px 0px 0px 20px',
+        margin:'10px 5px 0px 5px',
         backgroundColor:'rgba(255,255,255,1)',
         boxShadow:'2px 3px rgba(150,5,5,0.8)',
         borderRadius:13,

@@ -15,8 +15,8 @@ const useStyle = createUseStyles({
         fontSize: 40,
         fontWeight: 600,
         lineHeight:'64px',
-        color: '#2c5f2d',
-        backgroundColor:'#f5f5f5',
+        color: '#AB274F',
+        
     },
     mainRow: {
         backgroundColor: '#101820ff',
