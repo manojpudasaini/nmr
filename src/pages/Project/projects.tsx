@@ -5,11 +5,12 @@ import {createUseStyles} from "react-jss";
 const useStyle = createUseStyles({
   projectTitle:{
     fontSize:40,
+    backgroundColor:'#f5f5f5',
     color:'#f06060',
     fontFamily:`'Montserrat',sans-serif`,
     lineHeight:'64px',
     textAlign:'center',
-    margin:'50px 0px',
+    margin:'25px 0px',
     fontWeight:600,
   },
 })
@@ -46,6 +47,7 @@ const  Project=()=> {
         url='https://res.cloudinary.com/odin/image/upload/ar_1:1,c_fill,g_face:center,w_1000/v1599804837/Google/Google_Keep_dpedfm.png'
         link='https://www.google.com/keep'
        />
+
 
       </div>
        </div>

@@ -11,7 +11,8 @@ const useStyles=createUseStyles({
     },
     infoWrapper:{
         position:'absolute',
-        height:'70vh',
+        marginTop:7,
+        height:'68vh',
         width:'100%',
         background:'#000',
         opacity:'70%',
@@ -21,19 +22,20 @@ const useStyles=createUseStyles({
         flexFlow:'column',
         position:'absolute',
         top:'30%',
-        left:'45%',
-        transform:'translate(-30%,-30%)',
+        left:'42%',
+        transform:'translate(-30%,-42%)',
     },
     intro:{
         textAlign:'center',
         color:'#fff',
         fontSize:'2rem',
         fontWeight:600,
+        letterSpacing:6,
         fontFamily:`'Montserrat',sans-serif`,
     },
     profession:{
         textAlign:'center',
-        marginTop:'30%',
+        marginTop:'0%',
         color:'#fff',
         fontSize:'1.5rem',
         fontWeight:400,
@@ -64,7 +66,7 @@ const Portfolio =()=>{
                 WEB DESIGNER AND DEVELOPER
             </div>
             </div>
-            <Slider imageUrl="https://res.cloudinary.com/odin/image/upload/v1596349955/butterfly_jo1s9x.png"/> 
+            <Slider imageUrl="https://res.cloudinary.com/odin/image/upload/v1601813709/timthumb_bkp2do.jpg"/> 
         </div>
 
     )

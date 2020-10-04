@@ -17,7 +17,7 @@ const Slider:React.FC <ImageProps>=(props)=>{
     return(
         <div >
             <div className={classes.imageWrapper}>
-                <img src={props.imageUrl} height='100%' width='100%'/> 
+                <img src={props.imageUrl} alt="my-image" height='100%' width='100%'/> 
             </div>
         </div>
         

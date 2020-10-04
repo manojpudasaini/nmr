@@ -15,16 +15,18 @@ const useStyles=createUseStyles({
             padding:'5px 5px',
             minWidth:50,
             maxWidth:150,
-            backgroundColor:'#7c8ebf',
+            backgroundColor:'#101820ff',
             borderRadius:5,
-            boxShadow:'1px 2px #5b78c7',
+            boxShadow:'1px 2px #010b13',
             cursor:'pointer',
 
             '& a':{
                 textDecoration:'none',
                 color:'white',
             },
-           
+          '&:hover':{
+               backgroundColor:'#777777',
+           }
 
         },
 

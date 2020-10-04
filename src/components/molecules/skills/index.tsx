@@ -6,17 +6,17 @@ import { FundProjectionScreenOutlined, AntDesignOutlined, ToolOutlined } from "@
 
 const useStyle = createUseStyles({
     skillsWrapper: {
-        margin: '20px 0px',
-
+        margin: '20px 0px 0px',
         fontFamily: `'Montserrat',sans-serif`,
     },
     skillsHeader: {
-        margin: '50px 0px',
+        margin: '25px 0px',
         textAlign: 'center',
         fontSize: 40,
         fontWeight: 600,
         lineHeight:'64px',
         color: '#2c5f2d',
+        backgroundColor:'#f5f5f5',
     },
     mainRow: {
         backgroundColor: '#101820ff',

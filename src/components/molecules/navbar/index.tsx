@@ -1,5 +1,4 @@
-import { AntDesignOutlined } from '@ant-design/icons';
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import {createUseStyles} from 'react-jss';
 import {MenuOutlined} from "@ant-design/icons";
 import Logo from '../../../assets/logo.png';
@@ -22,7 +21,7 @@ const useStyles = createUseStyles({
     },
     navWrapper:{
         height:'10vh',
-        backgroundColor:'#5b78c7',  
+      backgroundColor:'#080808', 
     },
 
     navLinks:{
@@ -35,9 +34,17 @@ const useStyles = createUseStyles({
         marginLeft:'auto',
         '& li a':{
             fontSize:'1.2rem',
+            fontWeight:600,
             color:'white',
             textDecoration:'none',
+            '&:hover':{
+                color:'#cc0000',
+            },
+            '&:active':{
+                color:'#cc0000',
+            },
         },
+
     },
     hamBurger:{
     display:'none',
@@ -53,18 +60,16 @@ const useStyles = createUseStyles({
             },
         },
         navLinks:{
-            zIndex:1,
+           zIndex:100,
            display:'flex',
-           position:'fixed', 
-           backgroundColor:'#5b78c7',
-           top:'9%',
+           position:'absolute', 
+           backgroundColor:'#080808',
+           top:'10%',
            right:0,
-           height:'50vh',
-           width:'20vh',
+           height:'100vh',
+           width:'50%',
            flexDirection:'column',
-           clipPath:'circle(100px at 90% -10% )',
-           '-webkit-clipPath':'circle(1200px at 90% -10%)',
-           transition:'all 1s ease-out',
+           transition:'all 0.6s ease-out',
            '& li a':{
             fontSize:'0.9rem',
            },
@@ -89,19 +94,18 @@ const useStyles = createUseStyles({
 
 const Responsivenav =() =>{
     const classes= useStyles();
-
     return(    
         <div className={classes.mainWrapper} >
             <div className={classes.imageWrapper}>
               <a href="/"><img src={Logo} width='200px'/></a>  
             </div>
             <nav className={classes.navWrapper}>
-                <MenuOutlined className={classes.hamBurger}/>
+                <MenuOutlined className={classes.hamBurger} />
                 <ul className={classes.navLinks}>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Skills</a></li>
-                    <li><Button buttonName="Sign Up"/></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><Button buttonName="Contact"/></li>
                 </ul>
             </nav>      
         </div>
