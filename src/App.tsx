@@ -4,7 +4,7 @@ import Project from './pages/Project/projects';
 import Skills from './components/molecules/skills/index';
 import Portfolio from "./components/molecules/portfolio/index";
 import Contact from "./components/molecules/contact/index";
-
+import About from "./components/molecules/about/index";
 const  App=()=> {
   return ( 
   <div style={{backgroundColor:"#ccc"}}>
@@ -12,7 +12,9 @@ const  App=()=> {
    <Portfolio />
    <Skills/>
    <Project/>
-    <Contact/>
+   <About/>
+   <Contact/>
+ 
   </div>
        
   );

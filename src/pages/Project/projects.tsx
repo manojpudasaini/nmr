@@ -19,8 +19,8 @@ const  Project=()=> {
   return ( 
     <div >
       <div className={classes.projectTitle}>
-        WORK
-        <div style={{height:'3px',width:"130px",margin:"0 auto",backgroundColor:'#248760'}}>
+        WORK <span role="img" aria-label="hammer-wrench">🛠</span>
+        <div style={{height:'3px',width:"200px",margin:"0 auto",backgroundColor:'#248760'}}>
 
                 </div>
       </div>

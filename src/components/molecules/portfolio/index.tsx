@@ -6,12 +6,11 @@ import {createUseStyles} from 'react-jss';
 const useStyles=createUseStyles({
     portfolioWrapper:{
         marginRight:'auto',
-        height:'70vh',
+        height:'500px',
         width:'100%',
     },
     infoWrapper:{
         position:'absolute',
-        marginTop:7,
         height:'500px',
         width:'100%',
         background:'#000',

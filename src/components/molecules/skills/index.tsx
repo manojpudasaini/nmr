@@ -55,7 +55,7 @@ const Skills = () => {
     return (
         <div className={classes.skillsWrapper}>
             <div className={classes.skillsHeader}>
-                What I Learnt<span>🚀🚀</span>
+                What I Learnt<span role="img" aria-label="rocket">🚀</span>
                 <div style={{height:'3px',width:"380px",margin:"0 auto",backgroundColor:'#248760'}}>
 
                 </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import { MenuOutlined } from "@ant-design/icons";
 import Logo from '../../../assets/logo.png';
-import Button from '../../atoms/button/index';
+//import Button from '../../atoms/button/index';
 import * as Scroll from 'react-scroll';
 const useStyles = createUseStyles({
 
@@ -13,7 +13,6 @@ const useStyles = createUseStyles({
     imageWrapper: {
         top: '2%',
         position: 'absolute',
-        height: '10vh',
         '& img': {
             padding: '5px 15px',
             cursor: 'pointer',
@@ -32,7 +31,8 @@ const useStyles = createUseStyles({
         justifyContent: 'space-around',
         alignItems: 'center',
         marginLeft: 'auto',
-        '& li a': {
+        '& li p': {
+            cursor:'pointer',
             fontSize: '1.2rem',
             fontWeight: 600,
             color: 'white',
@@ -53,8 +53,8 @@ const useStyles = createUseStyles({
     '@media (max-width: 768px)': {
         imageWrapper: {
             top: 0,
+            marginTop:13,
             position: 'absolute',
-            height: '10vh',
             '& img': {
                 padding: '5px 15px 0px 15px',
             },
@@ -64,7 +64,7 @@ const useStyles = createUseStyles({
             display: 'flex',
             position: 'absolute',
             backgroundColor: '#080808',
-            top: '10%',
+            top: '11%',
             right: 0,
             height: '100vh',
             width: '50%',
@@ -118,17 +118,17 @@ const Responsivenav = () => {
     return (
         <div className={classes.mainWrapper} >
             <div className={classes.imageWrapper}>
-                <a href="/"><img src={Logo} width='200px' /></a>
+                <a href="/"><img src={Logo} alt="brandlogo" width='200px' /></a>
             </div>
 
             <nav className={classes.navWrapper}>
                 <MenuOutlined className={classes.hamBurger} onClick={togglehandler} />
                 {showNav ?
                     <ul className={classes.navLinks}>
-                        <li onClick={() => { scroll.scrollTo(530);  }}><a>Skills</a></li>
-                        <li onClick={() => { scroll.scrollTo(1030);  }}><a>Work</a></li>
-                        <li onClick={() => { scroll.scrollTo(1600);  }}><a>About Me</a></li>
-                        <li onClick={() => { scroll.scrollToBottom(); }}><a>Let's Connect</a></li>
+                        <li onClick={() => { scroll.scrollTo(530); }}><p>Skills</p></li>
+                        <li onClick={() => { scroll.scrollTo(1030); }}><p>Work</p></li>
+                        <li onClick={() => { scroll.scrollTo(1600); }}><p>About Me</p></li>
+                        <li onClick={() => { scroll.scrollToBottom(); }}><p>Let's Connect</p></li>
                         
                     </ul> : null}
             </nav>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {createUseStyles} from "react-jss";
-import {FacebookOutlined,InstagramOutlined,LinkedinOutlined} from '@ant-design/icons';
+import {FacebookOutlined,InstagramOutlined,LinkedinOutlined,MailOutlined} from '@ant-design/icons';
 //import {useHistory} from 'react-router';
 
 const useStyles = createUseStyles({
@@ -22,11 +22,15 @@ const useStyles = createUseStyles({
     },
     socialIcon:{
         backgroundColor:'#fff',
+        color:"black",
         fontSize:30,
         margin:'20px 15px',
+        '&:hover':{
+            color:'#C20806',
+        }
     },
     mailText:{
-        fontSize:18,
+        fontSize:20,
         color:'#fff',
     }
 })
@@ -44,17 +48,25 @@ const Contact =() =>{
             </div>
             <div>
             
-           <a href="https://facebook.com/mpudasaini17">
+           <a href="https://facebook.com/mpudasaini17" target="_blank" rel="noopener noreferrer">
                  <FacebookOutlined className={classes.socialIcon}/>
            </a>
            
+           <a href="https://www.instagram.com/pudasaini_manoj/" target="_blank" rel="noopener noreferrer">
+               <InstagramOutlined className={classes.socialIcon} />
+            </a> 
             
-            <InstagramOutlined className={classes.socialIcon} />
-            <LinkedinOutlined className={classes.socialIcon} />
+            <a href="https://www.linkedin.com/in/manoj-pudasaini-641324147/" target="_blank" rel="noopener noreferrer">
+                 <LinkedinOutlined className={classes.socialIcon} />
+            </a>
            
             </div>
             <span className={classes.mailText}>Mail Me At: </span>
-            <span className={classes.mailText}>mpudasaini17@gmail.com</span>
+            <span className={classes.mailText}> 
+            <a href="mailto:mpudasaini17@gmail.com" target="_blank" rel="noopener noreferrer">
+            <MailOutlined className={classes.socialIcon}/>
+                </a>
+                </span>
         </div>
     )
 }

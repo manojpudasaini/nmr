@@ -95,14 +95,14 @@ const ProjectCard: React.FC<ProjectCardProps>=(props)=>{
             <div className={classes.projectImagewrapper}>
                 <div className={classes.projectImageInfoHolder}>
                     {props.projectTitle}
-                    <a href={props.link}>See more</a>
+                    <a href={props.link} target="_blank" rel="noopener noreferrer">See more</a>
                 </div>
             </div>
             </div>
             <div className={classes.projectInformationHolder}>
                 <p>{props.projectTitle}</p>
                 {
-                    props.language.map((ele :any)=> <span>{ele}</span>)
+                    props.language.map((ele:any)=> <span>{ele}</span>)
                 }
                
             </div>
