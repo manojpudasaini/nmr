@@ -48,6 +48,13 @@ const useStyles=createUseStyles({
         },
         profession:{
             fontSize:'1rem',
+        },
+        infoWrapper:{
+            height:'46vh'
+
+        },
+        portfolioWrapper:{
+            height:'46vh'
         }
     }
 

@@ -11,6 +11,11 @@ const useStyles= createUseStyles({
        height:500, 
        width:'100%',
     },
+    '@media (max-width:768px)':{
+        imageWrapper:{
+            height:'46vh',
+        }
+    }
 })
 const Slider:React.FC <ImageProps>=(props)=>{
     const classes=useStyles();
