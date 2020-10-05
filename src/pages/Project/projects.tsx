@@ -20,6 +20,9 @@ const  Project=()=> {
     <div >
       <div className={classes.projectTitle}>
         WORK
+        <div style={{height:'3px',width:"130px",margin:"0 auto",backgroundColor:'#248760'}}>
+
+                </div>
       </div>
     <div style={{display:'grid',placeItems:'center',gridTemplateColumns:'repeat(auto-fit, minmax(18rem, 1fr)',gridGap:'1rem',}}>
         <ProjectCard

@@ -56,6 +56,9 @@ const Skills = () => {
         <div className={classes.skillsWrapper}>
             <div className={classes.skillsHeader}>
                 What I Learnt<span>🚀🚀</span>
+                <div style={{height:'3px',width:"380px",margin:"0 auto",backgroundColor:'#248760'}}>
+
+                </div>
             </div>
 
             <Row className={classes.mainRow}>
