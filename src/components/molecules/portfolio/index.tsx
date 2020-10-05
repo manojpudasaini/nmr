@@ -12,7 +12,7 @@ const useStyles=createUseStyles({
     infoWrapper:{
         position:'absolute',
         marginTop:7,
-        height:'68vh',
+        height:'500px',
         width:'100%',
         background:'#000',
         opacity:'70%',

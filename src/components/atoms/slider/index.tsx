@@ -8,7 +8,7 @@ export interface ImageProps{
 const useStyles= createUseStyles({
     imageWrapper:{
        marginRight:'auto',
-       height:'70vh', 
+       height:500, 
        width:'100%',
     },
 })
