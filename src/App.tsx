@@ -8,8 +8,8 @@ import About from "./components/molecules/about/index";
 const  App=()=> {
   return ( 
   <div style={{backgroundColor:"#ccc"}}>
-    <Navbar/>
-   <Portfolio />
+   <Navbar/>
+   <Portfolio/>
    <Skills/>
    <Project/>
    <About/>
