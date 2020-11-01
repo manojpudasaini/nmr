@@ -101,8 +101,8 @@ const ProjectCard: React.FC<ProjectCardProps>=(props)=>{
             </div>
             <div className={classes.projectInformationHolder}>
                 <p>{props.projectTitle}</p>
-                {
-                    props.language.map((ele:any)=> <span>{ele}</span>)
+                {  
+                    props.language.map((ele:any)=> <span key={ele}>{ele}</span>)
                 }
                
             </div>

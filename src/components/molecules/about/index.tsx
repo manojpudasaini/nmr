@@ -29,7 +29,6 @@ const useStyles=createUseStyles({
         width:'80%',
         height:'100%',
         padding:20,
-        marginLeft:50,
         '& p':{
             color:"#010b13",
             fontWeight:500,

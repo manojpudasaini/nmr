@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 import {createUseStyles} from "react-jss";
 import {FacebookOutlined,InstagramOutlined,LinkedinOutlined,MailOutlined} from '@ant-design/icons';
 //import {useHistory} from 'react-router';
